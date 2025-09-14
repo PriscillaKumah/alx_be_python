@@ -5,7 +5,7 @@ length = 10
 width = 5
 
 #Compute the area of a circle using this formula
-area = (length * width)
+area = length * width
 
 #Output
 print("The area of the rectangle is:", area)
