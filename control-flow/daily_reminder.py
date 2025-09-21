@@ -22,5 +22,4 @@ for _ in range(1):
         reminder += " That requires immediate attention today!"
 
     # Output reminder
-    print(reminder)
-
+    print(f"Reminder: {reminder}")
