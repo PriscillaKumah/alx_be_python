@@ -1,12 +1,10 @@
-# daily_reminder.py
-
 # Prompt for task details
 task = input("Enter your task: ")
-priority = input("Enter the task priority (high/medium/low): ").lower()
-time_bound = input("Is the task time-bound? (yes/no): ").lower()
+priority = input("Enter the task priority (high/medium/low): ")
+time_bound = input("Is the task time-bound? (yes/no): ")
 
-# Use a loop to display the reminder once (you could expand this for repeated reminders)
-for _ in range(1):  # loop runs once, just to meet the "loop" requirement
+# Loop (runs once to satisfy loop requirement)
+for _ in range(1):
     match priority:
         case "high":
             reminder = f"Your task '{task}' is HIGH priority."
@@ -17,10 +15,9 @@ for _ in range(1):  # loop runs once, just to meet the "loop" requirement
         case _:
             reminder = f"Your task '{task}' has an UNKNOWN priority."
 
-    # Modify the reminder if the task is time-bound
+    # Add extra message if time-bound
     if time_bound == "yes":
         reminder += " This task requires immediate attention today!"
 
-    # Print the customized reminder
+    # Output reminder
     print(reminder)
-
