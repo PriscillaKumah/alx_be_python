@@ -1,7 +1,7 @@
 # Prompt for task details
-task = input("Enter your task: ")
-priority = input("Enter the task priority (high/medium/low): ")
-time_bound = input("Is the task time-bound? (yes/no): ")
+task = input("Task: ")
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 # Loop (runs once to satisfy loop requirement)
 for _ in range(1):
@@ -17,7 +17,7 @@ for _ in range(1):
 
     # Add extra message if time-bound
     if time_bound == "yes":
-        reminder += " This task requires immediate attention today!"
+        reminder += " That requires immediate attention today!"
 
     # Output reminder
     print(reminder)
